@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.attorneys-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.attorneys-section h2 {
+    color: #ff4b2b;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.attorneys-section p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.tab {
+    border: 1px solid #ff4b2b;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #ff4b2b;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.tab.active, .tab:hover {
+    background-color: #ff4b2b;
+    color: #ffffff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+.card p {
+    color: #555;
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.card .info img {
+    width: 15px;
+    vertical-align: text-top;
+    margin-right: 5px;
+}
+
+.connect-btn {
+    display: inline-block;
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-btn:hover {
+    background-color: #e04321;
+}
+
+.view-more-btn {
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background-color: #e04321;
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

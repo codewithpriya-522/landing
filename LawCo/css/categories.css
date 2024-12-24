@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333333;
+}
+
+.categories {
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.categories h2 {
+    color: #ff4b2b;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.categories p {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    color: #666666;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+    gap: 30px;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.grid-item {
+    background: #ffffff;
+    border: 2px dashed #ff4b2b;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid-item img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.grid-item h3 {
+    font-size: 1rem;
+    color: #333333;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.view-more-btn {
+    background-color: #ff4b2b;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background-color: #e04321;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+    }
+
+    .grid-item {
+        width: 100%;
+    }
+}

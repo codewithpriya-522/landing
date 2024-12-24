@@ -1,0 +1,125 @@
+ /* Hero Section */
+ .hero {
+    position: relative;
+    height: 100vh;
+    background: url('/assets/heroSection/bg.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    width: 90%;
+    max-width: 800px;
+  }
+
+  .hero-content p {
+    font-size: 1.5rem; /* Larger subtitle */
+    margin-bottom: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem; /* Larger main headline */
+    font-weight: bold;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap
+  }
+
+  /* Search Bar */
+  .search-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: transparent ;/* Transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    overflow: hidden;
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .search-bar input[type="text"] {
+    border: none;
+    background: transparent;
+    padding: 10px 15px;
+    flex: 1;
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .search-bar input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .search-bar input[type="text"]:focus {
+    outline: none;
+  }
+
+  .search-bar button {
+    background: rgba(255, 255, 255, 0.3);;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px;
+    border-radius: 0% 50% 50% 0%;
+  }
+
+  .search-bar button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .location-btn {
+    background: #ff5733;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .location-btn:hover {
+    background: #cc4627;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+
+    .search-container {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .search-bar {
+      max-width: 100%;
+    }
+
+    .location-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
