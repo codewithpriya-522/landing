@@ -1,13 +1,8 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333333;
-}
-
 .categories {
     text-align: center;
-    padding: 50px 50px;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    color: #333333;
 }
 
 .categories h2 {
